@@ -1,0 +1,35 @@
+#section-counter {
+    margin: 20px; 
+}
+
+body{
+    overflow-x: hidden; 
+}
+
+.testimony-section{
+    display: none; 
+}
+
+.ftco-gallery{
+    margin: 20px 0;
+}
+
+.back{
+    font-size: 14px; 
+}
+
+.position{
+    display: none; 
+}
+
+.map-contact-desc h5{
+    padding-left: 50px; 
+}
+
+.map-contact-desc h4{
+    font-weight: 600; 
+}
+
+.map-contact-desc h4 span{
+    width: 40px; 
+}
