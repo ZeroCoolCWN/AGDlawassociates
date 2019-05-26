@@ -903,7 +903,16 @@
   <script src="js/scrollax.min.js"></script>
 
 
-  <script src="js/main.js"></script>
+	<script src="js/main.js"></script>
+	
+	<script>
+		$(document).ready( function () {
+			if(location.href.lastIndexOf('?mail') >= 0 ) 
+			{
+				alert('Your query has been submitter. We will get back to you soon!')
+			}
+		}); 
+	</script>
     
   </body>
 </html>
