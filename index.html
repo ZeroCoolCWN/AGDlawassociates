@@ -29,7 +29,11 @@
     
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/style.css">
+		
+		<script src="js/gmaps.min.js"></script>
+		
+		
   </head>
   <body>
 
@@ -600,18 +604,21 @@
 		<section class="ftco-counter">
 			<div class="container-fluid">
 				<div class="row d-flex">
-					<div class="col-md-6 d-flex">
-							<div id="mapBox" class="mapBox" 
-							data-lat="13.117335" 
-							data-lon="80.274615" 
-							data-zoom="40" 
-							data-marker="images/loc.png" 
-							data-info="106/14, KH Road, Korrukkupet, Old Washermanpet, 
-							Chennai-600021, Tamil Nadu, India"
-							data-mlat="13.117335"
-							data-mlon="80.274615">
-								Map
-						</div>					
+					<div class="col-md-6 d-flex" style="padding-top: 15px; height: 400px;">
+							<div id="map"></div>	
+						<script>
+								// Initialize and add the map
+								function initMap() {
+									// The location of Uluru
+									var uluru = {lat: 13.028179, lng: 80.2414048};
+									// The map, centered at Uluru
+									var map = new google.maps.Map(
+											document.getElementById('map'), {zoom: 15, center: uluru});
+									// The marker, positioned at Uluru
+									var marker = new google.maps.Marker({position: uluru, map: map});
+								}
+							</script>		
+							<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBnTPXZn7vu7SsvYsG6M2jNENEmDRlxWbM&callback=initMap"></script>	
 					</div>
 					<div class="col-md-6 px-5 py-5">
 						<div class="map-contact-desc">
@@ -893,8 +900,6 @@
   <script src="js/jquery.timepicker.min.js"></script>
   <script src="js/scrollax.min.js"></script>
 
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBnTPXZn7vu7SsvYsG6M2jNENEmDRlxWbM"></script>
-	<script src="js/gmaps.min.js"></script>
 
   <script src="js/main.js"></script>
     

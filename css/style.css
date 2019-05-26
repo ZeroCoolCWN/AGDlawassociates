@@ -9572,6 +9572,11 @@ textarea.form-control {
   animation: loader-dash 1.5s ease-in-out infinite;
   stroke-linecap: round; }
 
+  #map {
+    height: 100%;  /* The height is 400 pixels */
+    width: 100%;  /* The width is the width of the web page */
+   }
+
 @-webkit-keyframes loader-rotate {
   100% {
     -webkit-transform: rotate(360deg);
